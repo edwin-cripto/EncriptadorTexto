@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --colro-primario: #F7EFE5;
+    --color-secundario: #E2BFD9;
+    --color-terciario: #C8A1E0;
+    --cuarto-color: #674188;
+
+    --fuente-elegante: "Work Sans", sans-serif;
+    --fuente-para-cajas: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--colro-primario);
+    box-sizing: border-box;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 0.4em;
+    font-family: var(--fuente-elegante);
+    font-size: 3em;
+    color: var(--cuarto-color);
+}
+
+.cajas_de_texto {
+    display: flex;
+    justify-content: space-between;
+    margin: 6em 6em 2em 6em;
+    gap: 50px;
+}
+
+.entrada_de_datos {
+    display: flex;
+    background-color: transparent;
+    border: 3px solid var(--cuarto-color);
+    border-radius: 6%;
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+    width: 37.5rem;
+    height: 31.25rem;
+    font-family: var(--fuente-para-cajas);
+    font-size: 25px;
+    color: var(--cuarto-color);
+}
+
+.salida_de_datos {
+    display: flex;
+    background-color: transparent;
+    border: 3px solid var(--cuarto-color);
+    border-radius: 6%;
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+    width: 37.5rem;
+    height: 31.25rem;
+    font-family: var(--fuente-para-cajas);
+    font-size: 25px;
+    color: var(--cuarto-color);
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 1.875rem;
+}
+
+.boton {
+    width: 10rem;
+    height: 3.125rem;
+    box-shadow: none;
+    border:3px solid var(--cuarto-color);
+    font-family: var(--fuente-para-cajas);
+    font-size: 19px;
+    background-color: var(--colro-primario);
+    color: var(--cuarto-color);
+    border-radius: 20%;
+}
+
+.boton:hover {
+    background-color: var(--color-terciario);
+    color: var(--colro-primario);
+}
